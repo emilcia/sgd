@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/sdldemoapp.dir/src/graphics.cpp.o"
   "CMakeFiles/sdldemoapp.dir/src/main.cpp.o"
+  "CMakeFiles/sdldemoapp.dir/src/physics.cpp.o"
   "sdldemoapp.pdb"
   "sdldemoapp"
 )

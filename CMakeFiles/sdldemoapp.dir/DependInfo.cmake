@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/emilcia/simsamples/01hello/src/graphics.cpp" "/home/emilcia/simsamples/01hello/CMakeFiles/sdldemoapp.dir/src/graphics.cpp.o"
   "/home/emilcia/simsamples/01hello/src/main.cpp" "/home/emilcia/simsamples/01hello/CMakeFiles/sdldemoapp.dir/src/main.cpp.o"
+  "/home/emilcia/simsamples/01hello/src/physics.cpp" "/home/emilcia/simsamples/01hello/CMakeFiles/sdldemoapp.dir/src/physics.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

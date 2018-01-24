@@ -1,1 +1,1 @@
-/usr/bin/c++   -Wall -Wextra -fopenmp -O3    -rdynamic CMakeFiles/sdldemoapp.dir/src/main.cpp.o  -o sdldemoapp -Wl,-Bstatic -lSDL2main -Wl,-Bdynamic -lSDL2 -lpthread 
+/usr/bin/c++   -Wall -Wextra -fopenmp -O3    -rdynamic CMakeFiles/sdldemoapp.dir/src/graphics.cpp.o CMakeFiles/sdldemoapp.dir/src/main.cpp.o CMakeFiles/sdldemoapp.dir/src/physics.cpp.o  -o sdldemoapp -Wl,-Bstatic -lSDL2main -Wl,-Bdynamic -lSDL2 -lpthread 
