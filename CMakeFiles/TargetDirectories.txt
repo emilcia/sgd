@@ -1,0 +1,3 @@
+/home/emilcia/simsamples/01hello/CMakeFiles/rebuild_cache.dir
+/home/emilcia/simsamples/01hello/CMakeFiles/sdldemoapp.dir
+/home/emilcia/simsamples/01hello/CMakeFiles/edit_cache.dir

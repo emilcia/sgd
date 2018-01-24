@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/emilcia/simsamples/01hello/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b60fb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b60fb.dir/build.make CMakeFiles/cmTC_b60fb.dir/build
+make[1]: Entering directory '/home/emilcia/simsamples/01hello/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b60fb.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -Wall -Wextra    -o CMakeFiles/cmTC_b60fb.dir/CheckSymbolExists.cxx.o -c /home/emilcia/simsamples/01hello/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_b60fb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b60fb.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra     -rdynamic CMakeFiles/cmTC_b60fb.dir/CheckSymbolExists.cxx.o  -o cmTC_b60fb 
+CMakeFiles/cmTC_b60fb.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b60fb.dir/build.make:97: recipe for target 'cmTC_b60fb' failed
+make[1]: *** [cmTC_b60fb] Error 1
+make[1]: Leaving directory '/home/emilcia/simsamples/01hello/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b60fb/fast' failed
+make: *** [cmTC_b60fb/fast] Error 2
+
+File /home/emilcia/simsamples/01hello/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/emilcia/simsamples/01hello/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dbc23/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dbc23.dir/build.make CMakeFiles/cmTC_dbc23.dir/build
+make[1]: Entering directory '/home/emilcia/simsamples/01hello/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dbc23.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -Wall -Wextra -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_dbc23.dir/CheckFunctionExists.cxx.o -c /home/emilcia/simsamples/01hello/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_dbc23
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbc23.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_dbc23.dir/CheckFunctionExists.cxx.o  -o cmTC_dbc23 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_dbc23.dir/build.make:97: recipe for target 'cmTC_dbc23' failed
+make[1]: *** [cmTC_dbc23] Error 1
+make[1]: Leaving directory '/home/emilcia/simsamples/01hello/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_dbc23/fast' failed
+make: *** [cmTC_dbc23/fast] Error 2
+
+
